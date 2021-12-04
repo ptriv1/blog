@@ -69,6 +69,7 @@
 }
 
 .post-list {
+    background-color: goldenrod;
     border: 1px solid black;
     margin: 50px;
 }

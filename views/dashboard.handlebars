@@ -22,9 +22,9 @@
             </div>
         </form>
     </div>
-
-    {{#if posts.length}}
     <div class="post-list">
+    {{#if posts.length}}
+    <div>
         <h3>Past Posts:</h3>
 
         {{#each posts as |post|}}
@@ -39,6 +39,7 @@
         {{/each}}
     </div>
     {{/if}}
+    </div>
 </div>
 
 <script src="./js/profile.js"></script>
