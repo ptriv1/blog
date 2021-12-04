@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Need help with Java project",
+        "comment": "I'm getting an error and need help with my project."
+    },
+    {
+        "name": "Senior developer job",
+        "comment": "We're hiring a senior developer.  Contact me for details."
+    },
+    {
+        "name": "Seeking several open source contributors",
+        "comment": "I'm a senior developer working on a new project.  We welcome more open source contributors."
+    }
+]

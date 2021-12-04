@@ -1,0 +1,44 @@
+<div class="welcome">
+    <div>
+        <h2>Welcome, {{name}}!</h2>
+    </div>
+</div>
+
+<div>
+    <div class="new-post-form">
+        <h3>Create a new post:</h3>
+
+        <form>
+            <div>
+                <label for="post-name">post name:</label>
+                <input class="form-input" type="text" id="post-name" name="post-name" />
+            </div>
+            <div>
+                <label for="post-comment">comment:</label>
+                <textarea class="form-input" id="post-comment" name="post-comment"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Create</button>
+            </div>
+        </form>
+    </div>
+
+    {{#if posts.length}}
+    <div class="post-list">
+        <h3>Past Posts:</h3>
+
+        {{#each posts as |post|}}
+        <div>
+            <div>
+                <h4><a href="/post/{{post.id}}">{{post.name}}</a></h4>
+            </div>
+            <div>
+                <button class="btn" data-id="{{post.id}}">DELETE</button>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    {{/if}}
+</div>
+
+<script src="./js/profile.js"></script>
