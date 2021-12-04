@@ -73,3 +73,11 @@
     border: 1px solid black;
     margin: 50px;
 }
+
+.post-title {
+    padding: 10px;
+}
+
+.footer-post {
+    padding: 2px;
+}
