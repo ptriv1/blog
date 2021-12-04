@@ -1,10 +1,10 @@
 {{#each posts as |post| }}
 <div class="post-list">
     <div>
-        <h2>
+        <h2 class="post-title">
             <a href="/post/{{post.id}}">{{post.name}}</a>
         </h2>
-        <p>Created by {{post.user.name}} on {{format_date post.date_created}}</p>
+        <p class="footer-post">Created by {{post.user.name}} on {{format_date post.date_created}}</p>
     </div>
     <div>
         <p>
